@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      username: mongo
+      password: pass
+      host: localhost
+      port: 27017
+      database: conference
+  config:
+    import: optional:configserver:http://localhost:8888
+application:
+  config:
+    participant:
+      url: http://localhost:8090/api/participant
